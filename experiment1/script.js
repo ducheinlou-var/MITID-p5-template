@@ -6,7 +6,7 @@ let randomButton = document.querySelector("#randomize");
 
 randomButton.addEventListener("click", function(){
     background(73); 
-    generateStacks(); 
+    generateStacks(5); 
 })
 
 function setup(){
@@ -22,11 +22,14 @@ function draw(){
 //    we call the function 
 //    stackOfCircle(100, 200,"#F000E0");
 //     stackOfCircle(400, 300, "#EEDD90");
-// we create a loop to generate 10 stacks 
+
 
     }
     // we create a function to generate stacks 
-function generateStacks (){
+function generateStacks (stackAmount){
+    // we create a loop to generate 10 stacks 
+
+
 for(let i=0; i<10; i++) {
         let randomX = random(0, 800)
         let randomY = random (0,500)
