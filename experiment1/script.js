@@ -6,7 +6,7 @@ let randomButton = document.querySelector("#randomize");
 
 randomButton.addEventListener("click", function(){
     background(73); 
-    generateStacks(5); 
+    generateStacks(6); 
 })
 
 function setup(){
@@ -14,6 +14,8 @@ function setup(){
     createCanvas(800, 500);
     //to get rid of the borders
     noStroke(); 
+    background(73); 
+    generateStacks(5); 
 }
 
 function draw(){
@@ -30,7 +32,7 @@ function generateStacks (stackAmount){
     // we create a loop to generate 10 stacks 
 
 
-for(let i=0; i<10; i++) {
+for(let i=0; i < stackAmount; i++) {
         let randomX = random(0, 800)
         let randomY = random (0,500)
         let randomColor=random(0,255) 
